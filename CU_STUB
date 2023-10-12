@@ -1,0 +1,4 @@
+#!/bin/bash
+sudo echo "RUN OSC CU_STUB"
+# sudo /home/oaignb/OAIOSC_integration/odu_at_oai/l2/bin/cu_stub/cu_stub | tee -a /home/oaignb/OSC-DUHigh_OAI-L1/CU_STUB_LOG
+sudo /home/oaignb/OAIOSC_integration/odu_at_oai/l2/bin/cu_stub/cu_stub > /home/oaignb/LOG_integrate/CU_STUB_LOG

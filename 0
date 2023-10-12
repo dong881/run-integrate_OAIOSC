@@ -1,0 +1,2 @@
+sudo echo "Start TCPdump..."
+sudo tcpdump -i any -nn -w /home/gnb/OAIOSC/LOG_integrate/getData.pcap 
