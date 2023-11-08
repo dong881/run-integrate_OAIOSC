@@ -1,4 +1,4 @@
 #!/bin/bash
 echo "RUN OSC DU"
 
-sudo /home/gnb/OAIOSC/OSC_L2/bin/odu/odu > /home/gnb/OAIOSC/LOG_integrate/DU_LOG
+sudo stdbuf -oL /home/gnb/OAIOSC/OSC_L2/bin/odu/odu 2>&1 | ts &>/home/gnb/OAIOSC/LOG_integrate/DU_LOG.log

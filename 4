@@ -1,4 +1,5 @@
 #!/bin/bash
 echo "RUN OAI PNF"
 cd /home/gnb/OAIOSC/OAI_L1/cmake_targets/ran_build/build
-sudo /home/gnb/OAIOSC/OAI_L1/cmake_targets/ran_build/build/nr-softmodem -O ../../../../OSC_L2/mwnl/oai_pnf_conf/oaiL1.nfapi.usrpb210.conf --sa -E --gNBs.[0].min_rxtxtime 6 --continuous-tx --nfapi 1 > /home/gnb/OAIOSC/LOG_integrate/OAI_PNF_LOG
+
+sudo stdbuf -oL /home/gnb/OAIOSC/OAI_L1/cmake_targets/ran_build/build/nr-softmodem -O ../../../../OSC_L2/mwnl/oai_pnf_conf/oaiL1.nfapi.usrpb210.conf --sa -E --gNBs.[0].min_rxtxtime 6 --continuous-tx --nfapi 1 2>&1 | ts &> /home/gnb/OAIOSC/LOG_integrate/OAI_PNF_LOG.log

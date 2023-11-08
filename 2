@@ -2,4 +2,5 @@
 echo "RUN OSC RIC_STUB"
 # sudo /home/gnb/OAIOSC/OSC_L2/bin/ric_stub/ric_stub | tee -a /home/oaignb/OSC-DUHigh_OAI-L1/RIC_STUB_LOG
 
-sudo /home/gnb/OAIOSC/OSC_L2/bin/ric_stub/ric_stub > /home/gnb/OAIOSC/LOG_integrate/RIC_STUB_LOG
+sudo stdbuf -oL /home/gnb/OAIOSC/OSC_L2/bin/ric_stub/ric_stub 2>&1 | ts &> /home/gnb/OAIOSC/LOG_integrate/RIC_STUB_LOG.log
+

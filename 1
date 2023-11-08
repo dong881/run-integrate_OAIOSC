@@ -1,4 +1,4 @@
 #!/bin/bash
 echo "RUN OAI CU"
 cd /home/gnb/OAIOSC/OAI_CU/cmake_targets/ran_build/build
-sudo /home/gnb/OAIOSC/OAI_CU/cmake_targets/ran_build/build/nr-softmodem -O ../../../ci-scripts/conf_files/cu.band66.tm1.106PRB.usrpb210.conf --sa > /home/gnb/OAIOSC/LOG_integrate/OAI_CU_LOG
+sudo stdbuf -oL /home/gnb/OAIOSC/OAI_CU/cmake_targets/ran_build/build/nr-softmodem -O ../../../ci-scripts/conf_files/cu.band66.tm1.106PRB.usrpb210.conf --sa 2>&1 | ts &>  /home/gnb/OAIOSC/LOG_integrate/OAI_CU_LOG.log
