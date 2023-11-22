@@ -1,0 +1,6 @@
+#!/bin/bash
+echo "RUN OAI CU (BMW lab CU with BMW lab DU)"
+# OAI CU (run CU first anyway)
+cd /home/gnb/bmwlab_tony_cu_du/oai_cu/cmake_targets/ran_build/build/
+# sudo RFSIMULATOR=server ./nr-softmodem --rfsim --sa -O ../../../targets/PROJECTS/GENERIC-NR-5GC/CONF/cu_gnb.conf
+sudo stdbuf -oL /home/gnb/bmwlab_tony_cu_du/oai_cu/cmake_targets/ran_build/build/nr-softmodem --sa -O ../../../targets/PROJECTS/GENERIC-NR-5GC/CONF/NCU_cu_gnb.conf 2>&1 | ts &>  /home/gnb/OAIOSC/LOG_integrate/OAI_CU_BMWLAB_LOG.log

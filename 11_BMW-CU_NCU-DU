@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "RUN OAI CU (BMW lab)"
+echo "RUN OAI CU (BMW lab CU with NCU DU)"
 # OAI CU (run CU first anyway)
 cd /home/gnb/bmwlab_tony_cu_du/oai_cu/cmake_targets/ran_build/build/
 # sudo RFSIMULATOR=server ./nr-softmodem --rfsim --sa -O ../../../targets/PROJECTS/GENERIC-NR-5GC/CONF/cu_gnb.conf
