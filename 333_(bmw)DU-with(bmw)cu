@@ -1,4 +1,4 @@
 #!/bin/bash
 echo "RUN OSC DU G-release (BMW lab CU with BMW lab DU)"
 
-sudo stdbuf -oL /home/gnb/l2/bin/odu/odu 2>&1 | ts &>/home/gnb/OAIOSC/LOG_integrate/DU_relG_BMWLAB_LOG.log
+sudo stdbuf -oL /home/gnb/OAIOSC/OSC_L2_G_BMW/bin/odu/odu 2>&1 | ts &>/home/gnb/OAIOSC/LOG_integrate/DU_relG_BMWLAB_LOG.log

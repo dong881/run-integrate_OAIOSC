@@ -1,4 +1,4 @@
-cd ~/l2/build/odu
+cd ~/OAIOSC/OSC_L2_G_BMW/build/odu
 
 # O-DU High
 make clean_odu MACHINE=BIT64 MODE=FDD VNF_ENABLE=YES
